@@ -75,9 +75,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FirstTable.aspx" />
+    <Content Include="FirstTable.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FirstTable.aspx.cs">
+      <DependentUpon>FirstTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstTable.aspx.designer.cs">
+      <DependentUpon>FirstTable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
